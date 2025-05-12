@@ -6,7 +6,7 @@ import {
   GROOM_NAME,
   BRIDE_NAME,
 } from "../../config.js";
-import BackgroundVideo from "../assets/BackgroundVideo.mp4";
+import romily_demo_video from "../assets/romily_demo_video.mp4";
 import GroovePaper from "../assets/GroovePaper.png";
 
 const Layout = styled.div`
@@ -29,6 +29,8 @@ const TitleWrapper = styled.div`
 
 const VideoBackground = styled.video`
   width: 100%;
+  height: 100%;
+  object-fit: cover;
 `;
 
 const WeddingInvitation = styled.p`
@@ -38,14 +40,14 @@ const WeddingInvitation = styled.p`
 `;
 
 const GroomBride = styled.p`
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: bold;
   opacity: 0.9;
   margin-bottom: 16px;
 `;
 
 const Schedule = styled.p`
-  font-size: 1.06rem;
+  font-size: 0.8rem;
   opacity: 0.65;
   margin-bottom: 24px;
 `;
@@ -64,7 +66,7 @@ const Title = () => {
         </Schedule>
       </TitleWrapper>
       <VideoBackground autoPlay loop muted playsInline={true}>
-        <source src={BackgroundVideo} type="video/mp4" />
+        <source src={romily_demo_video} type="video/mp4" style={{width: "75%", height: "auto"}} />
       </VideoBackground>
     </Layout>
   );
