@@ -205,6 +205,16 @@ const Location = () => {
           >
             자세히 보기
           </a>
+          {/* <img 
+            src="https://cdn.imweb.me/thumbnail/20230130/5c5159a347d77.jpg"
+            alt="Location Map"
+            style={{
+              width: "100%",
+              height: "auto",
+              marginTop: "20px",
+              borderRadius: "8px"
+            }}
+          /> */}
         </div>
       </Content>
     </Wrapper>

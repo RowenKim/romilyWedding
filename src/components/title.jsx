@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import {
   WEDDING_DATE,
@@ -51,10 +51,60 @@ const Schedule = styled.p`
   opacity: 0.65;
   margin-bottom: 24px;
 `;
+
+const CountdownWrapper = styled.div`
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 24px;
+  color: var(--title-color);
+  opacity: 0.8;
+`;
+
+const CountdownItem = styled.span`
+  margin: 0 8px;
+  display: inline-block;
+`;
+
 const Title = () => {
+  const [timeLeft, setTimeLeft] = useState({
+    days: 0,
+    hours: 0,
+    minutes: 0,
+    seconds: 0
+  });
+
+  useEffect(() => {
+    const weddingDate = new Date('2026-05-30T00:00:00');
+    
+    const calculateTimeLeft = () => {
+      const now = new Date();
+      const difference = weddingDate - now;
+      
+      if (difference > 0) {
+        setTimeLeft({
+          days: Math.floor(difference / (1000 * 60 * 60 * 24)),
+          hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
+          minutes: Math.floor((difference / 1000 / 60) % 60),
+          seconds: Math.floor((difference / 1000) % 60)
+        });
+      }
+    };
+
+    calculateTimeLeft();
+    const timer = setInterval(calculateTimeLeft, 1000);
+
+    return () => clearInterval(timer);
+  }, []);
+
   return (
     <Layout>
       <TitleWrapper>
+        <CountdownWrapper>
+          <CountdownItem>{timeLeft.days}일</CountdownItem>
+          <CountdownItem>{timeLeft.hours}시간</CountdownItem>
+          <CountdownItem>{timeLeft.minutes}분</CountdownItem>
+          <CountdownItem>{timeLeft.seconds}초</CountdownItem>
+        </CountdownWrapper>
         <WeddingInvitation>ROMILY의 시크릿 초대장</WeddingInvitation>
         <GroomBride>
           {GROOM_NAME} &#38; {BRIDE_NAME}
