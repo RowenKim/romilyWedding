@@ -178,7 +178,7 @@ const Location = () => {
             flexDirection: "column",
             gap: "8px"
           }}>
-            <div>주차장에서 TEST 구역 {'>'}</div>
+            <div>주차장에서 TEST 2222구역 {'>'}</div>
             <div>결혼식장 전용 엘리베이터 {'>'}</div>
             <div>아모르홀 지나쳐서 스타티스 홀로!</div>
           </div>
