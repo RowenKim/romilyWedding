@@ -38,7 +38,7 @@ const Quote = () => {
   return (
     <Wrapper>
       <Image src={Flower} data-aos="fade-up" />
-      <Content data-aos="fade-up">
+      {/* <Content data-aos="fade-up">
         장담하건대. 세상이 다 겨울이어도
         <br />
         우리 사랑은 늘봄처럼 따뜻하고
@@ -49,6 +49,17 @@ const Quote = () => {
         - 이수동, (사랑가) -
         <br />
         <br />
+      </Content> */}
+      <Content data-aos="fade-up">
+        사랑은 숨 쉴 때마다 
+        <br/>
+        그 사람이 생각나는 것, 
+        <br/>
+        결혼은 코 고는 소리도 
+        <br/>
+        사랑하게 되는 것...ㅎㅎ..
+        <br />
+        — 멋쟁이 익명의 작가 -
       </Content>
     </Wrapper>
   );
