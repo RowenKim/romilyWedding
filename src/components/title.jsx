@@ -55,6 +55,7 @@ const Schedule = styled.p`
 const CountdownWrapper = styled.div`
   font-size: 1.2rem;
   font-weight: 500;
+  margin-bottom: 24px;
   color: var(--title-color);
   opacity: 0.8;
 `;
@@ -106,11 +107,6 @@ const Title = () => {
           <CountdownItem>{timeLeft.seconds}초</CountdownItem>
           <CountdownItem> 전</CountdownItem>
         </CountdownWrapper>
-        <hr style={{
-            border: "0.5px solid #d7ccc8",
-            marginTop: "10px",
-            marginBottom: "20px"
-          }}/>
         <GroomBride>
           {GROOM_NAME} &#38; {BRIDE_NAME}
         </GroomBride>

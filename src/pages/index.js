@@ -15,7 +15,6 @@ import Share from "../components/share";
 import Quote from "../components/quote";
 import Song from "../assets/song.mp3";
 import { Helmet } from "react-helmet";
-
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -55,12 +54,7 @@ const IndexPage = () => {
         <meta property="og:title" content="Romily 의 결혼식 초대" />
         <meta property="og:url" content="https://astonishing-dodol-3ee41b.netlify.app/" />
         <meta property="og:description" content="Romily 의 흥나는 잔치" />
-        <meta property="og:image" content="https://astonishing-dodol-3ee41b.netlify.app/static/romily_demo1-9de6c009262422b2132ca6508ea05feb.webp" />
-        
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Romily 의 결혼식 초대" />
-        <meta name="twitter:description" content="Romily 의 흥나는 잔치" />
-        <meta name="twitter:image" content="https://astonishing-dodol-3ee41b.netlify.app/static/romily_demo1-9de6c009262422b2132ca6508ea05feb.webp" />
+        <meta property="og:image" content="https://astonishing-dodol-3ee41b.netlify.app/static/romily_demo2-996fae2c75b3a6e7cacb300d896afa0c.webp" />
       </Helmet>
       <Title />
       <Greeting />
