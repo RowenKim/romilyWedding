@@ -118,7 +118,7 @@ const Share = () => {
       >
         카카오톡으로 공유하기
       </KakaoTalkShareButton>
-      <CopyToClipboard text={WEDDING_INVITATION_URL}>
+      <CopyToClipboard text={window.location.href}>
         <LinkShareButton
           style={{ margin: 0 }}
           icon={<LinkOutlined />}
