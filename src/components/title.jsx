@@ -55,7 +55,6 @@ const Schedule = styled.p`
 const CountdownWrapper = styled.div`
   font-size: 1.2rem;
   font-weight: 500;
-  margin-bottom: 24px;
   color: var(--title-color);
   opacity: 0.8;
 `;
@@ -74,7 +73,7 @@ const Title = () => {
   });
 
   useEffect(() => {
-    const weddingDate = new Date('2026-05-30T14:30:00');
+    const weddingDate = new Date('2026-05-30T14:20:00');
     
     const calculateTimeLeft = () => {
       const now = new Date();
@@ -99,7 +98,7 @@ const Title = () => {
   return (
     <Layout>
       <TitleWrapper>
-      <WeddingInvitation>🎊 로밀리쇼 시작 💃</WeddingInvitation>
+      <WeddingInvitation>🎊 로밀리쇼 입장 💃</WeddingInvitation>
         <CountdownWrapper>
           <CountdownItem>{timeLeft.days}일</CountdownItem>
           <CountdownItem>{timeLeft.hours}시간</CountdownItem>
@@ -107,6 +106,11 @@ const Title = () => {
           <CountdownItem>{timeLeft.seconds}초</CountdownItem>
           <CountdownItem> 전</CountdownItem>
         </CountdownWrapper>
+        <hr style={{
+            border: "0.5px solid #d7ccc8",
+            marginTop: "10px",
+            marginBottom: "20px"
+          }}/>
         <GroomBride>
           {GROOM_NAME} &#38; {BRIDE_NAME}
         </GroomBride>
