@@ -35,7 +35,7 @@ const VideoBackground = styled.video`
 
 const WeddingInvitation = styled.p`
   font-size: 1.125rem;
-  opacity: 0.45;
+  opacity: 0.95;
   margin-bottom: 16px;
 `;
 
@@ -61,7 +61,7 @@ const CountdownWrapper = styled.div`
 `;
 
 const CountdownItem = styled.span`
-  margin: 0 8px;
+  margin: 0 2px;
   display: inline-block;
 `;
 
@@ -99,13 +99,14 @@ const Title = () => {
   return (
     <Layout>
       <TitleWrapper>
+      <WeddingInvitation>🎊 로밀리쇼 시작 💃</WeddingInvitation>
         <CountdownWrapper>
           <CountdownItem>{timeLeft.days}일</CountdownItem>
           <CountdownItem>{timeLeft.hours}시간</CountdownItem>
           <CountdownItem>{timeLeft.minutes}분</CountdownItem>
           <CountdownItem>{timeLeft.seconds}초</CountdownItem>
+          <CountdownItem> 전</CountdownItem>
         </CountdownWrapper>
-        <WeddingInvitation>ROMILY의 시크릿 초대장</WeddingInvitation>
         <GroomBride>
           {GROOM_NAME} &#38; {BRIDE_NAME}
         </GroomBride>
