@@ -3,12 +3,12 @@ import ImageGallery from "react-image-gallery";
 import { Divider } from "antd";
 import styled from "styled-components";
 
-import GalleryPhoto1 from "../assets/romily_demo1.jpg";
-import GalleryPhoto2 from "../assets/romily_demo2.jpg";
-import GalleryPhoto3 from "../assets/romily_demo3.jpg";
-import GalleryPhoto4 from "../assets/romily_demo4.jpg";
-import GalleryPhoto5 from "../assets/romily_demo5.jpg";
-import GalleryPhoto6 from "../assets/romily_demo6.jpg";
+import GalleryPhoto1 from "../assets/romily_demo1.webp";
+import GalleryPhoto2 from "../assets/romily_demo2.webp";
+import GalleryPhoto3 from "../assets/romily_demo3.webp";
+import GalleryPhoto4 from "../assets/romily_demo4.webp";
+import GalleryPhoto5 from "../assets/romily_demo5.webp";
+import GalleryPhoto6 from "../assets/romily_demo6.webp";
 
 const Wrapper = styled.div`
   padding-top: 42px;
