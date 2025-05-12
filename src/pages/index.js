@@ -46,15 +46,16 @@ const IndexPage = () => {
   });
   return (
     <Wrapper>
-      <audio autoPlay loop>
-        <source src={Song} />
-      </audio>
       <Helmet>
+        <title>Romily 의 흥나는 잔치</title>
         <meta property="og:title" content="Romily 의 결혼식 초대" />
-        <meta property="og:url" content="https://astonishing-dodol-3ee41b.netlify.app/" />
+        <meta property="og:url" content="https://astonishing-dodol-3ee41b.netlify.app" />
         <meta property="og:description" content="Romily 의 흥나는 잔치" />
         <meta property="og:image" content="https://astonishing-dodol-3ee41b.netlify.app/static/romily_demo2-996fae2c75b3a6e7cacb300d896afa0c.webp" />
       </Helmet>
+      <audio autoPlay loop>
+        <source src={Song} />
+      </audio>
       <Title />
       <Greeting />
       <Gallery />
