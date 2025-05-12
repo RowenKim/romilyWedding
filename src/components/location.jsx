@@ -118,8 +118,10 @@ const Location = () => {
           boxShadow: "0 4px 12px rgba(0,0,0,0.08)",
         }}>
           <Title>대중교통 이용시</Title>
-          <br />
-          <br />
+          <hr style={{
+            border: "0.5px solid #d7ccc8",
+            margin: "12px 0"
+          }}/>
           <div style={{
             fontSize: "0.85rem",
             lineHeight: "1.8",
@@ -129,9 +131,8 @@ const Location = () => {
             flexDirection: "column",
             gap: "8px"
           }}>
-            <div>신도림역 하차 후 3번 출구 방향 {'>'}</div>
-            <div>지하로 연결 된 테크노마트 {'>'}</div>
-            <div>우측 결혼식장 전용 엘리베이터 이용</div>
+            <div>1호선 2호선 신도림역 </div>
+            <div>③번출구 테크노마트 판매동 지하1층과 직접 연결되어 있습니다.</div>
           </div>
           
           <a 
@@ -167,8 +168,10 @@ const Location = () => {
           boxShadow: "0 4px 12px rgba(0,0,0,0.08)",
         }}>
           <Title>자차 이용시</Title>
-          <br />
-          <br />
+          <hr style={{
+            border: "0.5px solid #d7ccc8",
+            margin: "12px 0"
+          }}/>
           <div style={{
             fontSize: "0.85rem",
             lineHeight: "1.8",
@@ -178,9 +181,8 @@ const Location = () => {
             flexDirection: "column",
             gap: "8px"
           }}>
-            <div>주차장에서 TEST 2222구역 {'>'}</div>
-            <div>결혼식장 전용 엘리베이터 {'>'}</div>
-            <div>아모르홀 지나쳐서 스타티스 홀로!</div>
+            <div>테크노마트 지하주차장 이용(B3~B7)</div>
+            <div>주차요원의 안내를 받으세요.</div>
           </div>
           
           <a 
