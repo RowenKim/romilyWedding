@@ -63,13 +63,29 @@ const Greeting = () => {
         <br />
         6년 연애, 이제 그만할게여
         <br />
+        .
         <br />
+        .
+        <br />
+        .
+        <br />
+        .
+        <br />
+        .
+        <br />
+        .
+        <br />
+        .
+        <br />
+        .
         <br />
         <br />
         <br />
 
         이제는 결혼 할랍니더
 
+        <br />
+        <br />
         <br />
         <br />
       </Content>

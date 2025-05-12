@@ -4,7 +4,7 @@ export const KAKAOTALK_SHARE_IMAGE =
   "https://cdn.pixabay.com/photo/2014/11/13/17/04/heart-529607_960_720.jpg";
 
 export const WEDDING_DATE = "2026년 05월 30일, 토요일 오후 02시 30분";
-export const WEDDING_LOCATION = "웨딩시티, 8층 스타티스홀";
+export const WEDDING_LOCATION = "웨딩시티 신도림, 8층 스타티스홀";
 
 export const GROOM_NAME = "김종원";
 export const GROOM_ACCOUNT_NUMBER = "○○은행 ***-***-******";

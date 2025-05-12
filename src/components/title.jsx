@@ -34,20 +34,20 @@ const VideoBackground = styled.video`
 `;
 
 const WeddingInvitation = styled.p`
-  font-size: 0.825rem;
+  font-size: 1.125rem;
   opacity: 0.45;
   margin-bottom: 16px;
 `;
 
 const GroomBride = styled.p`
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: bold;
   opacity: 0.9;
   margin-bottom: 16px;
 `;
 
 const Schedule = styled.p`
-  font-size: 0.8rem;
+  font-size: 0.85em;
   opacity: 0.65;
   margin-bottom: 24px;
 `;
@@ -55,7 +55,7 @@ const Title = () => {
   return (
     <Layout>
       <TitleWrapper>
-        <WeddingInvitation>WEDDING INVITATION</WeddingInvitation>
+        <WeddingInvitation>ROMILY의 시크릿 초대장</WeddingInvitation>
         <GroomBride>
           {GROOM_NAME} &#38; {BRIDE_NAME}
         </GroomBride>
