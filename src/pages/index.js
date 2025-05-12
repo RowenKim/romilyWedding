@@ -50,7 +50,6 @@ const IndexPage = () => {
         <source src={Song} />
       </audio>
       <Helmet>
-        <meta property="og:type" content="website" />
         <meta property="og:title" content="Romily 의 결혼식 초대" />
         <meta property="og:url" content="https://astonishing-dodol-3ee41b.netlify.app/" />
         <meta property="og:description" content="Romily 의 흥나는 잔치" />
